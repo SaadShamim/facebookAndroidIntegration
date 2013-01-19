@@ -52,7 +52,6 @@ public class MainActivity extends Activity {
                   new Request.Callback(){         
                       public void onCompleted(Response response) {
                           try {
-                        	  Log.d("sex",response.toString());
                         	  GraphObject go  = response.getGraphObject();
                               JSONObject  jso = go.getInnerJSONObject();
                               JSONArray   arr = jso.getJSONArray( "data" );
